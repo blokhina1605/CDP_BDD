@@ -9,6 +9,7 @@ Feature: Filter search results
     When I select category "Компьютеры"
     And I select subcategory "Игровые приставки"
 
+
   Scenario Outline: Check filter by price
     And I set minimum "<min>" and maximum "<max>" prices
     Then I see results matching search parameters "<min>" "<max>"
@@ -35,5 +36,5 @@ Feature: Filter search results
 
   @ignore
   Scenario: This scenario will never run
-    And because of @wip
+    And because of @ignore
 
